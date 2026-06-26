@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Language Learning App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Language Learning App</h1>
+
+    <div class="input-section">
+      <input type="text" id="wordInput" placeholder="Enter word or phrase" />
+      <input type="text" id="translationInput" placeholder="Enter translation" />
+      <select id="categoryInput">
+        <option value="Vocabulary">Vocabulary</option>
+        <option value="Phrases">Phrases</option>
+        <option value="Grammar">Grammar</option>
+      </select>
+      <button id="addWordBtn">Add</button>
+    </div>
+
+    <div class="filter-section">
+      <label for="filterCategory">Filter by category:</label>
+      <select id="filterCategory">
+        <option value="All">All</option>
+        <option value="Vocabulary">Vocabulary</option>
+        <option value="Phrases">Phrases</option>
+        <option value="Grammar">Grammar</option>
+      </select>
+    </div>
+
+    <div class="word-list-section">
+      <h2>Learning List</h2>
+      <ul id="wordList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
